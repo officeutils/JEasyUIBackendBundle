@@ -45,17 +45,21 @@ class AppKernel extends Kernel
 }
 ```
 
-Step 3: Add and configure PHPActiveRecordBundle to work with your database. Prepare your database models according to PHPActiveRecord requirements.
+Step 3: Add and configure PHPActiveRecordBundle to work with your database. 
+-------------------------
+Prepare your database models according to PHPActiveRecord requirements.
 
 Step 4: Enable JEasyUI bundle routing at routing.yml
-
+-------------------------
 ```yml
 office_utils_j_easy_ui_backend:
     resource: "@OfficeUtilsJEasyUIBackendBundle/Controller/"
     type:     annotation
 ```
 
-Step 5: Use routes to work with your model. For example
+Step 5: Use routes to work with your model. 
+-------------------------
+For example:
 
 To CREATE User - POST http://localhost/User/add?username=user1
 To READ User as JSON - GET http://localhost/User/get?user_id=1
