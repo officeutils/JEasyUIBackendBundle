@@ -49,7 +49,7 @@ Step 3: Add and configure PHPActiveRecordBundle to work with your database.
 -------------------------
 Prepare your database models according to PHPActiveRecord requirements.
 
-Step 4: Enable JEasyUI bundle routing at routing.yml
+Step 4: Enable JEasyUIBundle routing at routing.yml
 -------------------------
 ```yml
 office_utils_j_easy_ui_backend:
