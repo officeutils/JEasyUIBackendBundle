@@ -60,7 +60,7 @@ office_utils_j_easy_ui_backend:
 Step 5: Use routes to work with your model. 
 -------------------------
 For example:
-
+```text
 To CREATE User - POST http://localhost/User/add?username=user1
 To READ User as JSON - GET http://localhost/User/get?user_id=1
 To EDIT User - POST http://localhost/User/update?user_id=1&username=user2
@@ -68,3 +68,4 @@ To DELETE User - POST http://localhost/User/delete?user_id=1
 
 To get DATAGRID data as JSON - GET http://localhost/User/datagrid
 Ti get COMBOBOX data as JSON - GET http://localhost/User/combobox
+```
