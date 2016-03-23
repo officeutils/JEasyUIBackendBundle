@@ -69,3 +69,32 @@ To DELETE User - POST http://localhost/User/delete?user_id=1
 To get DATAGRID data as JSON - GET http://localhost/User/datagrid
 Ti get COMBOBOX data as JSON - GET http://localhost/User/combobox
 ```
+
+Step 5: Extend JEasyUIController. 
+-------------------------
+
+To customize your model behavior (sorting, ordering, grouping and etc.) extend JEasyUIController and override appropriate methods. 
+
+```php
+...
+use OfficeUtils\JEasyUIBackendBundle\Controller\JEasyUIBackendController as Controller;
+...
+class UserController extends Controller
+{
+    ...
+    protected function getSelect() {};
+    protected function getJoins() {};
+    protected function getGroups() {};
+    protected function getConditions() {};
+    protected function getOrder() {};
+    ...
+}
+```
+
+Set up your controller using at routing.yml
+
+```yml
+user_datagrid:
+    path:   /User/datagrid
+    defaults: { _controller: ACME\UserBundle\Controller\UserController::apiDatagrid, object:User }
+```
