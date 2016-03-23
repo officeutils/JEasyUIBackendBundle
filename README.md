@@ -57,7 +57,7 @@ office_utils_j_easy_ui_backend:
     type:     annotation
 ```
 
-Step 5: Use routes to work with your model. 
+Step 5: Use routes to work with your models. 
 -------------------------
 For example:
 ```text
